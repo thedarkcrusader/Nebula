@@ -39,9 +39,9 @@
 /datum/map/kleibkhar/get_map_info()
 	return "Kleibkhar Independent Colony. A diverse new commercial venture on the fringe of known space."
 
-/obj/abstract/level_data/my_cool_level
+/obj/abstract/level_data/atmoschange
 	var/list/exterior_atmosphere
-    exterior_atmosphere = list(
-        /decl/material/gas/whatever_gas =   MOLES_O2STANDARD,
-        /decl/material/gas/nitrogen = MOLES_N2STANDARD
+	exterior_atmosphere = list(
+        /decl/material/gas/carbon_monoxide = MOLES_O2STANDARD,
+        /decl/material/gas/oxygen = MOLES_N2STANDARD
     )
