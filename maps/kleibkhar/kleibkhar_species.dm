@@ -11,7 +11,7 @@
 	spawn_flags = SPECIES_CAN_JOIN
 
 /decl/species/adherent
-	spawn_flags = SPECIES_CAN_JOIN
+	spawn_flags = SPECIES_IS_WHITELISTED | SPECIES_IS_RESTRICTED
 
 /decl/species/human/tritonian
 	spawn_flags = SPECIES_CAN_JOIN
