@@ -337,6 +337,11 @@
 	},
 /turf/exterior/concrete/reinforced,
 /area/exoplanet/kleibkhar/mines/exits)
+"Z" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/abstract/level_data/atmoschange,
+/turf/exterior/concrete/reinforced,
+/area/exoplanet/kleibkhar/mines/exits)
 
 (1,1,1) = {"
 h
@@ -30942,7 +30947,7 @@ n
 H
 n
 n
-n
+Z
 n
 x
 x
