@@ -34,10 +34,10 @@ var/global/list/station_prefixes = list("", "Imperium", "Heretical", "Cuban",
 
 var/global/list/station_names = list("", "Stanford", "Dwarf", "Alien",
 	"Aegis", "Death-World", "Rogue", "Safety", "Paranoia",
-	"Explosive", "North", "West", "East", "South", "Slant-ways", 
-	"Widdershins", "Rimward", "Expensive", "Procreatory", "Imperial", 
-	"Unidentified", "Immoral", "Carp", "Orc", "Pete", "Control", 
-	"Nettle", "Class", "Crab", "Fist", "Corrogated", "Skeleton", 
+	"Explosive", "North", "West", "East", "South", "Slant-ways",
+	"Widdershins", "Rimward", "Expensive", "Procreatory", "Imperial",
+	"Unidentified", "Immoral", "Carp", "Orc", "Pete", "Control",
+	"Nettle", "Class", "Crab", "Fist", "Corrogated", "Skeleton",
 	"Gentleman", "Capitalist", "Communist", "Bear", "Beard", "Space",
 	"Star", "Moon", "System", "Mining", "Research", "Supply", "Military",
 	"Orbital", "Battle", "Science", "Asteroid", "Home", "Production",
@@ -101,7 +101,13 @@ var/global/list/music_tracks = list(
 	"80s All Over Again" = /decl/music_track/eighties,
 	"Wild Encounters" = /decl/music_track/wildencounters,
 	"Torn" = /decl/music_track/torn,
-	"Nebula" = /decl/music_track/nebula
+	"Nebula" = /decl/music_track/nebula,
+	"Red Sector A" = /decl/music_track/redsectora,
+	"Hold On" = /decl/music_track/holdon,
+	"Bringing Home The Rain" = /decl/music_track/bringinghometherain,
+	"The Horror" = /decl/music_track/thehorror,
+	"Gimme Shelter" = /decl/music_track/gimmeshelter
+
 )
 
 /proc/setup_music_tracks(var/list/tracks)

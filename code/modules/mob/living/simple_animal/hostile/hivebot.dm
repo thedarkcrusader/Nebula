@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/hivebot
 	name = "hivebot"
-	desc = "A junky looking robot with four spiky legs."
+	desc = "A junky looking mining robot with four spiky legs."
 	icon = 'icons/mob/simple_animal/hivebot.dmi'
 	health = 55
 	maxHealth = 55
@@ -27,7 +27,7 @@
 	skin_amount =   0
 
 /mob/living/simple_animal/hostile/hivebot/range
-	desc = "A junky looking robot with four spiky legs. It's equipped with some kind of small-bore gun."
+	desc = "A junky looking mining robot with some kind of small-bore gun."
 	ranged = 1
 	speed = 7
 
@@ -36,7 +36,7 @@
 	rapid = 1
 
 /mob/living/simple_animal/hostile/hivebot/strong
-	desc = "A junky looking robot with four spiky legs - this one has thick armour plating."
+	desc = "A junky looking robot with four spiky legs - this one has thick armour plating and a large-bore gun. It looks dangerous!"
 	health = 120
 	maxHealth = 120
 	ranged = 1
@@ -138,7 +138,7 @@ The megabot
 
 /mob/living/simple_animal/hostile/hivebot/mega
 	name = "hivemind"
-	desc = "A huge quadruped robot equipped with a myriad of weaponry."
+	desc = "A huge quadruped robot equipped with a myriad of weaponry. It looks EXTREMELY DANGEROUS!"
 	icon = 'icons/mob/simple_animal/megabot.dmi'
 	health = 440
 	maxHealth = 440
