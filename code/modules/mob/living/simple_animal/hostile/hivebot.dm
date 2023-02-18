@@ -34,6 +34,7 @@
 /mob/living/simple_animal/hostile/hivebot/rapid
 	ranged = 1
 	rapid = 1
+	speed = 5
 
 /mob/living/simple_animal/hostile/hivebot/strong
 	desc = "A junky looking robot with four spiky legs - this one has thick armour plating and a large-bore gun. It looks dangerous!"
@@ -41,6 +42,7 @@
 	maxHealth = 120
 	ranged = 1
 	can_escape = 1
+	speed = 10
 	natural_armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_RESISTANT
 		)
@@ -143,7 +145,7 @@ The megabot
 	health = 440
 	maxHealth = 440
 	natural_weapon = /obj/item/natural_weapon/circular_saw
-	speed = 0
+	speed = 10
 	natural_armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_RESISTANT,
 		ARMOR_BULLET = ARMOR_BALLISTIC_PISTOL

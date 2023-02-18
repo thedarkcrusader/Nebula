@@ -3,7 +3,7 @@
 	desc = "This is a random hostile mob."
 	icon = 'icons/mob/amorph.dmi'
 	icon_state = "standing"
-	spawn_nothing_percentage = 0
+	spawn_nothing_percentage = 50
 
 
 
@@ -13,10 +13,10 @@
 		/mob/living/simple_animal/hostile/hivebot/tele =        1,
 		/mob/living/simple_animal/hostile/hivebot/tele/range =  1,
 		/mob/living/simple_animal/hostile/hivebot/tele/strong = 1,
-		/mob/living/simple_animal/hostile/hivebot =             1500,
-		/mob/living/simple_animal/hostile/hivebot/range =       25,
-		/mob/living/simple_animal/hostile/hivebot/rapid =       25,
-		/mob/living/simple_animal/hostile/hivebot/strong =      10,
+		/mob/living/simple_animal/hostile/hivebot =             1000,
+		/mob/living/simple_animal/hostile/hivebot/range =       100,
+		/mob/living/simple_animal/hostile/hivebot/rapid =       100,
+		/mob/living/simple_animal/hostile/hivebot/strong =      50,
 	)
 	return spawnable_choices
 
@@ -59,9 +59,9 @@
 		/mob/living/simple_animal/hostile/hivebot/tele =        1,
 		/mob/living/simple_animal/hostile/hivebot/tele/range =  1,
 		/mob/living/simple_animal/hostile/hivebot/tele/strong = 1,
-		/mob/living/simple_animal/hostile/hivebot =             1500,
-		/mob/living/simple_animal/hostile/hivebot/range =       25,
-		/mob/living/simple_animal/hostile/hivebot/rapid =       25,
-		/mob/living/simple_animal/hostile/hivebot/strong =      10,
+		/mob/living/simple_animal/hostile/hivebot =             1000,
+		/mob/living/simple_animal/hostile/hivebot/range =       100,
+		/mob/living/simple_animal/hostile/hivebot/rapid =       100,
+		/mob/living/simple_animal/hostile/hivebot/strong =      50,
 	)
 	return spawnable_choices
