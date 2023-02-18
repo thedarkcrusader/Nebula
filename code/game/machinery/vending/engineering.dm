@@ -79,7 +79,30 @@
 		/obj/item/stock_parts/console_screen = 5,
 		/obj/item/stock_parts/capacitor = 5,
 		/obj/item/stock_parts/keyboard = 5,
-		/obj/item/stock_parts/power/apc/buildable = 5
+		/obj/item/stock_parts/power/apc/buildable = 5,
+		/obj/item/chargen_box/industrial/engineering = 20,
+		/obj/item/chargen_box/industrial/firefighter = 20,
+		/obj/item/chargen_box/industrial/building = 20,
+		/obj/item/chargen_box/industrial/steel = 20,
+		/obj/item/chargen_box/industrial/glass = 20,
+		/obj/item/chargen_box/industrial/plastic = 20,
+		/obj/item/chargen_box/industrial/cable = 20,
+		/obj/item/chargen_box/industrial/autolathe = 20,
+		/obj/item/chargen_box/industrial/mining = 20,
+		/obj/item/chargen_box/industrial/chem_suit = 20,
+		/obj/item/chargen_box/industrial/pick = 20,
+		/obj/item/chargen_box/industrial/ore_processor = 20,
+		/obj/item/chargen_box/industrial/stirling = 20,
+		/obj/item/chargen_box/science/rnd = 20,
+		/obj/item/chargen_box/science/chem = 20,
+		/obj/item/chargen_box/science/emt = 20,
+		/obj/item/chargen_box/science/doctor = 20,
+		/obj/item/chargen_box/science/surgery = 20,
+		/obj/item/chargen_box/science/refill = 20,
+		/obj/item/chargen_box/science/brute = 20,
+		/obj/item/chargen_box/science/burn = 20,
+		/obj/item/chargen_box/science/toxin = 20,
+		/obj/item/chargen_box/science/oxyloss = 20
 	)
 	contraband = list(/obj/item/rcd = 1, /obj/item/rcd_ammo = 5)
 
