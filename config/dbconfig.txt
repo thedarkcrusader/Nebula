@@ -17,4 +17,4 @@ DATABASE eternalFrontier
 LOGIN root
 
 # Password used to access the database
-PASSWORD
+PASSWORD lmogqod
