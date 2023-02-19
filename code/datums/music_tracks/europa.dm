@@ -85,6 +85,6 @@
 /decl/music_track/holdon
 	artist = "Royal Blood"
 	title = "Hold On"
-	song = 'sound/music/europa/HoldOn.ogg'
+	song = 'sound/music/europa/ho.ogg'
 	license = /decl/license/cc_by_nc_sa_3_0
 	url = "https://pulseemitter.bandcamp.com/track/nebula"

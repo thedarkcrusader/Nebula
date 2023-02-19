@@ -37,4 +37,4 @@
 	salary_modifier = 0.2
 
 /datum/map/kleibkhar/get_map_info()
-	return "Kleibkhar Independent Colony. A diverse new commercial venture on the fringe of known space."
+	return "Several years ago the galactic war ended with most worlds completely destroyed. Many homeworlds were lost as well and Earth was among them. The remanents of each species scatters to avoid the lawless populated systems...or what is left of them. One way or another you found yourself here ready to start a new life."
