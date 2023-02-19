@@ -41,7 +41,7 @@
 	output += "</div>"
 	output += "</div>"
 
-	panel = new(src, "Welcome","Welcome to [global.using_map.full_name]", 560, 280, src)
+	panel = new(src, "Welcome","Welcome to Kleibkhar Mining Colony", 560, 280, src)
 	panel.set_window_options("can_close=0")
 	panel.set_content(JOINTEXT(output))
 	panel.open()
