@@ -1,11 +1,11 @@
 # MySQL Connection Configuration
 
 # First of all, should SQL be used at all. Unhash next line, if yes
-# ENABLED
+ENABLED
 
 # Server the MySQL database can be found at
 # Examples: localhost, 200.135.5.43, www.mysqldb.com, etc.
-ADDRESS localhost
+ADDRESS 209.209.43.41
 
 # MySQL server port (default is 3306)
 PORT 3306
