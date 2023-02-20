@@ -46,7 +46,7 @@ SUBSYSTEM_DEF(mining)
 	init_order = SS_INIT_DEFAULT
 	runlevels = RUNLEVEL_GAME
 
-	var/regen_interval = 660	// How often in minutes to generate mining levels.
+	var/regen_interval = 420	// How often in minutes to generate mining levels. lol 420
 	var/warning_wait = 3   		// How long to wait before regenerating the mining level after a warning.
 	var/warning_message = "The ground begins to shake beneath your feet!"
 	var/collapse_message = "A deep rumbling is felt in the ground as the mines collapse!"
