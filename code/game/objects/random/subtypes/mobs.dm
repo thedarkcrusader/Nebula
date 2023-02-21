@@ -41,7 +41,7 @@
 /obj/spawner/Process()
 	for (var/weakref/track in spawned_creatures)
 		var/mob/possible_living_mob = track.resolve()
-		if(possible_living_mob?.stat != DEAD)
+		if(possible_living_mob?.stat != null)
 			return
 		else
 			spawned_creatures -= possible_living_mob
