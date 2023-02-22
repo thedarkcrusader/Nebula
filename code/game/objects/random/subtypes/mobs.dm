@@ -46,7 +46,11 @@
 		else
 			spawned_creatures -= possible_living_mob
 	var/spawn_type = pickweight(spawn_types)
-	var/new_creature = new spawn_type(loc)
+	var/xcords = rand(7,191)
+	var/ycords = rand(7,192)
+	var/zcords = rand(1,2)
+	var/newlocation = locate(xcords,ycords,zcords)
+	var/new_creature = new spawn_type(newlocation)
 	spawned_creatures += weakref(new_creature)
 
 
