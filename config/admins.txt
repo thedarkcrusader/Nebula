@@ -7,4 +7,5 @@
 
 crezilin - Host
 brotox - Host
-laughingrabbit - Admin
+laughingrabbit - CommunityManager
+theblackflag - JuniorDeveloper
