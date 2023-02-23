@@ -5,7 +5,7 @@
 	health = 55
 	maxHealth = 55
 	natural_weapon = /obj/item/natural_weapon/drone_slicer
-	projectilesound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
+	projectilesound = 'sound/weapons/Laser.ogg'
 	projectiletype = /obj/item/projectile/beam/smalllaser
 	faction = "hivebot"
 	min_gas = null
@@ -32,12 +32,13 @@
 	speed = 7
 
 /mob/living/simple_animal/hostile/hivebot/rapid
+	desc = "A junky looking mining robot with multiple small-bore guns."
 	ranged = 1
 	rapid = 1
 	speed = 5
 
 /mob/living/simple_animal/hostile/hivebot/strong
-	desc = "A junky looking robot with four spiky legs - this one has thick armour plating and a large-bore gun. It looks dangerous!"
+	desc = "A junky looking mining robot with thick armor plating and a large-bore gun. It looks dangerous!"
 	health = 120
 	maxHealth = 120
 	ranged = 1
