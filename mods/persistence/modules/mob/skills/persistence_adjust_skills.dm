@@ -1,5 +1,5 @@
 #define TIME_PER_POINT       60 MINUTES
-#define MAX_SKILL_POINTS    100
+#define MAX_SKILL_POINTS    140
 
 /datum/skillset
 	var/time_active = 0								 // Players get points over time.
