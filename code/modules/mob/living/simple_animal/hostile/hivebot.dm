@@ -1,5 +1,5 @@
 /mob/living/simple_animal/hostile/hivebot
-	name = "hivebot"
+	name = "Rogue Drill Drone"
 	desc = "A junky looking mining robot with four spiky legs."
 	icon = 'icons/mob/simple_animal/hivebot.dmi'
 	health = 55
@@ -11,7 +11,7 @@
 	min_gas = null
 	max_gas = null
 	minbodytemp = 0
-	speed = 4
+	speed = 5
 	natural_armor = list(
 		ARMOR_MELEE = ARMOR_MELEE_KNIVES
 		)
@@ -27,17 +27,20 @@
 	skin_amount =   0
 
 /mob/living/simple_animal/hostile/hivebot/range
+	name = "Rogue Cutter Drone"
 	desc = "A junky looking mining robot with some kind of small-bore gun."
 	ranged = 1
 	speed = 7
 
 /mob/living/simple_animal/hostile/hivebot/rapid
+	name = "Rogue Multi-Cutter Drone"
 	desc = "A junky looking mining robot with multiple small-bore guns."
 	ranged = 1
 	rapid = 1
-	speed = 5
+	speed = 9
 
 /mob/living/simple_animal/hostile/hivebot/strong
+	name = "Rogue Advanced Cutter Drone"
 	desc = "A junky looking mining robot with thick armor plating and a large-bore gun. It looks dangerous!"
 	health = 120
 	maxHealth = 120
@@ -140,7 +143,7 @@ The megabot
 #define ATTACK_MODE_ROCKET   "rocket"
 
 /mob/living/simple_animal/hostile/hivebot/mega
-	name = "hivemind"
+	name = "Rogue Refitted Ripley"
 	desc = "A huge quadruped robot equipped with a myriad of weaponry. It looks EXTREMELY DANGEROUS!"
 	icon = 'icons/mob/simple_animal/megabot.dmi'
 	health = 440
