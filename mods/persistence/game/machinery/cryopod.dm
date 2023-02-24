@@ -115,6 +115,7 @@
 	set waitfor = FALSE
 	if(!occupant)
 		return
+	occupant.rejuvenate()
 	state("Now transferring occupant [capitalize(occupant.real_name)] into long term storage. Please stand clear!")
 	audible_message("\The [src] whirrs and shudders.")
 	if(!occupant)
