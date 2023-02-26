@@ -38,6 +38,7 @@
 		occupant.client.perspective = EYE_PERSPECTIVE
 		occupant.client.eye = src
 	occupant.forceMove(src)
+	occupant.status_flags &= ~GODMODE
 	time_entered = world.time
 
 	SetName("[name] ([occupant])")
@@ -63,10 +64,16 @@
 		W.dropInto(loc)
 
 	src.go_out()
+
 	add_fingerprint(usr)
 
 	SetName(initial(name))
 	return
+
+/obj/machinery/cryopod/go_out()
+    if(occupant)
+        occupant.status_flags &= ~GODMODE
+    ..()
 
 // Players shoved into this will be removed from the game and added to limbo to be deserialized later.
 /obj/machinery/cryopod/despawner
@@ -115,7 +122,6 @@
 	set waitfor = FALSE
 	if(!occupant)
 		return
-	occupant.rejuvenate()
 	state("Now transferring occupant [capitalize(occupant.real_name)] into long term storage. Please stand clear!")
 	audible_message("\The [src] whirrs and shudders.")
 	if(!occupant)
