@@ -32,11 +32,41 @@
 
 	var/is_jammed = 0           //Whether this gun is jammed
 	var/jam_chance = 0          //Chance it jams on fire
+		//attachment shit
+	var/damage_modifier = 0
+
+	var/list/attachable_overlays	= list("muzzle", "rail", "under", "stock", "mag") //List of overlays so we can switch them in an out, instead of using Cut() on overlays.
+	var/list/attachable_offset 		= null		//Is a list, see examples of from the other files. Initiated on New() because lists don't initial() properly.
+	var/list/attachable_allowed		= null		//Must be the exact path to the attachment present in the list. Empty list for a default.
+	var/obj/item/attachable/muzzle 	= null		//Attachable slots. Only one item per slot.
+	var/obj/item/attachable/rail 	= null
+	var/obj/item/attachable/under 	= null
+	var/obj/item/attachable/stock 	= null
+
 	var/ammo_indicator	   //if true, draw ammo indicator overlays
 	//TODO generalize ammo icon states for guns
 	//var/magazine_states = 0
 	//var/list/icon_keys = list()		//keys
 	//var/list/ammo_states = list()	//values
+
+var/original_caliber
+var/original_ammo_type
+
+/obj/item/attachable/example_attachment/Attach(obj/item/gun/projectile/gun_to_attach, mob/user)
+  original_caliber = gun_to_attach.caliber
+  original_ammo_type = gun_to_attach.ammo_type
+  . = ..()
+  gun_to_attach.caliber = CALIBER_PISTOL_SMALL
+  gun_to_attach.ammo_type = /obj/item/ammo_casing/pistol/small
+
+/obj/item/attachable/example_attachment/Detach(mob/user)
+  . = ..()
+  master_gun.caliber = original_caliber
+  master_gun.ammo_type = original_ammo_type
+
+/obj/item/attachable/example_attachment/Destroy()
+  Detach()
+  return ..()
 
 /obj/item/gun/projectile/Initialize()
 	. = ..()
@@ -263,6 +293,9 @@
 	..()
 	if(ammo_indicator)
 		overlays += get_ammo_indicator()
+		update_attachables()
+		update_overlays()
+
 
 /obj/item/gun/projectile/proc/get_ammo_indicator()
 	var/base_state = get_world_inventory_state()
